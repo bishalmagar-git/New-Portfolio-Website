@@ -2,17 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
-import { SiAndroidstudio, SiKotlin, SiFirebase, SiMaterialdesign } from 'react-icons/si';
-import { FaPaintBrush, FaLayerGroup } from 'react-icons/fa';
+import { SiKotlin, SiFirebase, SiAndroid, SiGithub } from 'react-icons/si';
+import { FaPaintBrush, FaLayerGroup, FaDatabase, FaCodeBranch, FaJava } from 'react-icons/fa';
+import { RiLiveFill } from 'react-icons/ri';
+import { GiAbstract089 } from 'react-icons/gi';
 
 export default function Portfolio() {
   const skills = [
-    { name: 'Android Studio', icon: <SiAndroidstudio className="w-8 h-8" /> },
     { name: 'Kotlin', icon: <SiKotlin className="w-8 h-8" /> },
-    { name: 'Firebase', icon: <SiFirebase className="w-8 h-8" /> },
+    { name: 'Java', icon: <FaJava className="w-8 h-8" /> },
     { name: 'Jetpack Compose', icon: <FaPaintBrush className="w-8 h-8" /> },
-    { name: 'Material Design', icon: <SiMaterialdesign className="w-8 h-8" /> },
     { name: 'MVVM Architecture', icon: <FaLayerGroup className="w-8 h-8" /> },
+    { name: 'Room Database', icon: <FaDatabase className="w-8 h-8" /> },
+    { name: 'Retrofit', icon: <SiAndroid className="w-8 h-8" /> },
+    { name: 'Dagger Hilt', icon: <GiAbstract089 className="w-8 h-8" /> },
+    { name: 'LiveData', icon: <RiLiveFill className="w-8 h-8" /> },
+    { name: 'ViewModel', icon: <GiAbstract089 className="w-8 h-8" /> },
+    { name: 'Firebase', icon: <SiFirebase className="w-8 h-8" /> },
+    { name: 'Coroutines', icon: <FaCodeBranch className="w-8 h-8" /> },
+    { name: 'Git and Github', icon: <SiGithub className="w-8 h-8" /> },
   ];
 
   return (
@@ -39,7 +47,7 @@ export default function Portfolio() {
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-300 to-emerald-600 rounded-full blur-md opacity-30"></div>
               <img 
                 src="/profile.jpg" 
-                alt="Profile" 
+                alt="Bishal Pulami - Android Developer" 
                 className="relative w-full h-full rounded-full object-cover border-4 border-emerald-100/80 z-10 shadow-lg"
               />
             </motion.div>
@@ -52,7 +60,7 @@ export default function Portfolio() {
               <h2 className="text-xl md:text-2xl text-emerald-700 mb-4 font-medium">
                 Android Developer
               </h2>
-              <p className="text-emerald-800 max-w-lg leading-relaxed">
+              <p className="text-emerald-800 max-w-lg leading-relaxed text-lg text-justify">
                 Crafting premium mobile experiences with clean architecture and modern Android technologies.
                 I build apps that feel as refined as they function.
               </p>
